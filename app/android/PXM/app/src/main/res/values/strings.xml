@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">票小秘</string>
+    <string name="title_activity_register_activity_1">RegisterActivity_1</string>
+    <string name="noAccount">没有账户？立即注册</string>
+    <string name="phoneNumberInput">    请输入手机号</string>
+    <string name="passWordInput"><br /><br />请输入密码</string>
+    <string name="passwordRemembered">记住密码</string>
+    <string name="passwordForgotten">找回密码</string>
+    <string name="login">登录</string>
+    <string name="identifyingCode">验证码</string>
+    <string name="getIdentifyingCode">获取验证码</string>
+    <string name="registerNow">立即注册</string>
+    <string name="yourName">您的姓名</string>
+    <string name="setPassword">设置密码（6~20位字符）</string>
+    <string name="confirmPassword">  确认密码</string>
+    <string name="enterApp">进入应用</string>
+    <string name="title_activity_teat">TEAT</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+</resources>

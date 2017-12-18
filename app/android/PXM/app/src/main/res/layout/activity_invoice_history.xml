@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_main"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="pxm.com.pxm.source.activities.InvoiceHistoryActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/pxiaomiBlue"
+            android:text="历史记录"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false">
+        <ListView
+            android:id="@+id/lv_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:divider="#00000000"
+            android:dividerHeight="12dp" />
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/fab"
+            android:layout_alignBottom="@+id/lv_invoice"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/check"
+            android:scaleType="centerInside"
+            android:id="@+id/search_invoice" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context=".source.activities.ChooseHotelActivity"
+    android:background="@drawable/bg_main">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/pxiaomiBlue"
+        android:text="填写酒店名称"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:gravity="center" />
+
+    <!--Define a searchView-->
+    <SearchView
+        android:id="@+id/search_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+    </SearchView>
+    <ListView
+        android:id="@+id/lv_hotel_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

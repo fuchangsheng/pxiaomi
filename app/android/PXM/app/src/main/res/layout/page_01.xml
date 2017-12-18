@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:gravity="center_vertical|center_horizontal">
+        <com.jude.rollviewpager.RollPagerView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:id="@+id/roll_view_pager"
+            app:rollviewpager_play_delay="3000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+        </com.jude.rollviewpager.RollPagerView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.8"
+            android:gravity="center_vertical|center_horizontal">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/rectangle_red"
+                android:text="增值税专用发票"
+                android:textSize="16sp"
+                android:textColor="#cc000000"
+                android:id="@+id/btn_special_invoice"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/rectangle_green"
+                android:text="增值税普通发票"
+                android:textColor="#cc000000"
+                android:textSize="16sp"
+                android:id="@+id/btn_normal_invoice"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

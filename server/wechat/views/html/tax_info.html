@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>税务信息管理</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="/weui/dist/style/weui.css">
+    <link rel="stylesheet" type="text/css" href="/css/tax_info.css">
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/tax_info.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="page__hd" id="no-tax_bd">
+            <div class="icon-box">
+                <i class="weui-icon-info weui-icon_msg"></i>
+                <div class="icon-box__ctn">
+                    <h3 class="icon-box__title">暂无税务信息</h3>
+                    <p class="icon-box__desc">
+                        为了便于发票填写，建议您将一些常用的发票税务信息预先保存起来。
+                        点击下方按钮新建税务信息。
+                    </p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="page__bd">
+            <div id="info_div">
+
+            </div>
+            <div class="weui-btn-area">
+                <a class="weui-btn weui-btn_primary" id="bindMobile">新建</a>
+            </div>
+        </div>
+        <div class="page__ft">
+            <div class="weui-footer weui-footer_fixed-bottom">
+                <p class="weui-footer__links">
+                    <a href="#" class="weui-footer__link">开票助手</a>
+                </p>
+                <p class="weui-footer__text">Copyright &copy; 2016 pxiaomi.com</p>
+            </div>
+        </div>
+        <div id="loadingToast" style="display:none;">
+            <div class="weui-mask_transparent"></div>
+            <div class="weui-toast">
+                <i class="weui-loading weui-icon_toast"></i>
+                <p class="weui-toast__content">请稍候..</p>
+            </div>
+        </div>
+        <div id="toast" style="display: none;">
+            <div class="weui-mask_transparent"></div>
+            <div class="weui-toast">
+                <i class="weui-icon-warn weui-icon_toast"></i>
+                <p id="toast_content" class="weui-toast__content"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

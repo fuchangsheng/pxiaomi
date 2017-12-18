@@ -1,0 +1,44 @@
+%icon-box {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.page__hd{
+	text-align: center;
+	margin: 0 auto;
+}
+.weui-icon-info {
+    margin: 8% 0 4% 0;
+}
+
+.icon-box__title {
+    color: #8D8381;
+}
+
+.icon-box__desc {
+    text-align: left;
+    text-indent: 2em;
+}
+
+.page__ft {
+    margin-top: 25%;
+}
+
+#no-tax_bd {
+    display: none;
+}
+
+.click_info {
+    color: #8D8381;
+}
+
+.info {
+    border: 1px solid #d5d5d5;
+    width: 96%;
+    margin: 4px auto;
+}
+
+.weui-cells{
+	margin: 0 auto;
+	margin-top: 0px;
+}

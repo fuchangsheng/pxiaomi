@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>个人信息</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="/weui/dist/style/weui.css">
+	<link rel="stylesheet" type="text/css" href="/css/user_info.css">
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/user_info.js"></script>
+</head>
+<body>
+<div class="page">
+	<div class="page__hd">
+		<div>
+			<img id="portrait" src="">		
+		</div>		
+	</div>
+	<div class="page__bd" id="info_list">
+		<div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>用户</p>
+                </div>
+                <div class="weui-cell__ft" id="name"></div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>手机号</p>
+                </div>
+                <div class="weui-cell__ft" id="mobile"></div>
+             </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>性别</p>
+                </div>
+                <div class="weui-cell__ft" id="sex"></div>
+             </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>年龄</p>
+                </div>
+                <div class="weui-cell__ft" id="age"></div>
+             </div>
+             <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>邮箱</p>
+                </div>
+                <div class="weui-cell__ft" id="email"></div>
+             </div>
+        </div>	
+		<div class="weui-btn-area">
+			<a class="weui-btn weui-btn_primary" id="modify">修改</a>
+		</div>	
+
+	</div>
+	<div class="page__bd" id="info_input" style="display: none;">
+		
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">昵称</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="name_in" placeholder="请输入昵称"/>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="weui-cells__title">手机号暂不支持更改</div>
+		<div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>手机号</p>
+                </div>
+                <div class="weui-cell__ft" id="mobile_in"></div>
+             </div>
+        </div>
+        <br>
+		<div class="weui-cells__title">性别</div>
+        	<div class="weui-cells weui-cells_radio">
+            	<label class="weui-cell weui-check__label" for="x11">
+                	<div class="weui-cell__bd">
+                  	  <p>男</p>
+               		</div>
+                	<div class="weui-cell__ft">
+                    	<input type="radio" class="weui-check" name="radio1" id="x11">
+                    	<span class="weui-icon-checked"></span>
+                	</div>
+           		</label>
+	            <label class="weui-cell weui-check__label" for="x12">
+
+	                <div class="weui-cell__bd">
+	                    <p>女</p>
+	                </div>
+	                <div class="weui-cell__ft">
+	                    <input type="radio" name="radio1" class="weui-check" id="x12" checked="checked">
+	                    <span class="weui-icon-checked"></span>
+	                </div>
+	            </label>
+        </div>
+        <br>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label for="" class="weui-label">年龄</label></div>
+                	<div class="weui-cell__ft">
+                		<input class="weui-input" type="numbar" id="age_in" min="0" max="100" placeholder="请输入年龄" >
+                	</div>
+            </div>
+            <div class="weui-cell">
+            	<div class="weui-cell__hd"><label for="" class="weui-label">邮箱</label></div>
+                <div class="weui-cell__ft">
+                    <input class="weui-input" id="email_in" type="text" placeholder="请输入邮箱"/>
+                </div>
+            </div>
+        </div>
+		<div class="weui-btn-area">
+			<a class="weui-btn weui-btn_primary" id="confirm">确定</a>
+		</div>	
+
+	</div>
+			    <!-- loading toast -->
+		<div id="loadingToast" style="display:none;">
+	        <div class="weui-mask_transparent"></div>
+	        <div class="weui-toast">
+	            <i class="weui-loading weui-icon_toast"></i>
+		        <p class="weui-toast__content">请稍候..</p>
+		    </div>
+		</div>
+
+		<div id="toast" style="display: none;">
+		    <div class="weui-mask_transparent"></div>
+		    <div class="weui-toast">
+		        <i id="icon-toast" class="weui-icon-warn weui-icon_toast" style="color: white;"></i>
+		        <p id="toast_content" class="weui-toast__content"></p>
+		    </div>
+		</div>
+	<div class="page__ft">
+		<div class="weui-footer weui-footer_fixed-bottom">
+			<p class="weui-footer__links">
+				<a href="#" class="weui-footer__link">开票助手</a>
+			</p>
+			<p class="weui-footer__text">Copyright &copy; 2016 pxiaomi.com</p>
+		</div>		
+	</div>
+</div>
+</body>
+</html>

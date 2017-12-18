@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".source.activities.LoginActivity"
+    android:background="#f2f2f2"
+    android:paddingTop="40dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:gravity="center_vertical|center_horizontal">
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="@drawable/invoice"
+            android:id="@+id/test_imge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textCursorDrawable="@drawable/cursor"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/input_selector"
+                android:hint="@string/phoneNumberInput"
+                android:paddingLeft="10dp"
+                android:phoneNumber="true"
+                android:id="@+id/et_username"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+            <RelativeLayout
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:background="@drawable/input_selector"
+                    android:hint="@string/passWordInput"
+                    android:id="@+id/et_password"
+                    android:singleLine="true"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="#808080"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#000000" />
+                <ImageButton
+                    android:layout_width="27dp"
+                    android:layout_height="16dp"
+                    android:layout_alignRight="@+id/et_password"
+                    android:background="@drawable/eye"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/see_password"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="24dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp">
+                <CheckBox
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/checkBox"
+                    android:background="@drawable/checkbox_style"
+                    android:button="@null"
+                    android:checked="false">
+                </CheckBox>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="记住密码"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#121435" />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/passwordForgotten"
+                    android:clickable="true"
+                    android:textColor="#121435"
+                    android:id="@+id/password_forget" />
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:text="@string/login"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:id="@+id/btn_login"
+                android:background="@drawable/register_button_bg" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/noAccount"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:textColor="#121435"
+                android:id="@+id/tv_noaccount">
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

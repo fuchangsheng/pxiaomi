@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="pxm.com.pxm.source.activities.HotelInfoActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/pxiaomiBlue"
+        android:gravity="center"
+        android:text="酒店信息"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rectangle_01"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/hotel"
+                    app:civ_border_color="#f2f2f2"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#020202"
+                    android:textSize="20sp"
+                    android:id="@+id/hotel_info_name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.6"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="12dp">
+
+                    <Button
+                        android:id="@+id/write_by_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/rectangle_02"
+                        android:text="重新选择酒店"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignLeft="@+id/write_by_user"
+                        android:layout_alignParentLeft="false"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="45dp"
+                        android:src="@drawable/write" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="请填写金额："
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:layout_weight="1.5"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center_vertical" />
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_gravity="center_vertical">
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="输入金额"
+                            android:id="@+id/input_amount"
+                            android:background="@drawable/input_account_bg"
+                            android:paddingLeft="10dp"
+                            android:inputType="number"
+                            android:textSize="16sp" />
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/edit_pen"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="12dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="发票种类    ："
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.75"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:layout_gravity="center_vertical" />
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1">
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:entries="@array/invoice_type"
+                            android:spinnerMode="dialog"
+                            android:background="@drawable/spin_bg"
+                            android:paddingLeft="2dp"
+                            android:id="@+id/type_spinner" />
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/spin_tri"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="12dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="服务名称    ："
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.75"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:layout_gravity="center_vertical" />
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1">
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:entries="@array/services"
+                            android:spinnerMode="dialog"
+                            android:background="@drawable/spin_bg"
+                            android:paddingLeft="2dp"
+                            android:id="@+id/service_spinner" />
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/spin_tri"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="12dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="税        率："
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1.5"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:layout_gravity="center_vertical" />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:text="17%"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/input_account_bg"
+                        android:paddingLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/edit_rate"
+                        android:inputType="numberDecimal" />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:text="更改"
+                        android:textSize="16sp"
+                        android:background="@drawable/btn_bg"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/change_rate" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/register_button_bg"
+                    android:text="发 票 预 览"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

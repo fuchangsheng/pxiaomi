@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weui ActionSheet Test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="../../../node_modules/weui/dist/style/weui.css">
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/00_actionSheet.js"></script>
+</head>
+<body>
+<div class="page">
+    <div class="page__hd">
+        <h1 class="page__title">ActionSheet</h1>
+        <p class="page__desc">弹出式菜单</p>
+    </div>
+    <div class="page__bd page__bd_spacing">
+        <a href="javascript:;" class="weui-btn weui-btn_primary" id="showIOSActionSheet" style="width: 90%">iOS ActionSheet</a>
+        <a href="javascript:;" class="weui-btn weui-btn_primary" id="showAndroidActionSheet" style="width: 90%">Android ActionSheet</a>
+    </div>
+    <!--BEGIN actionSheet-->
+    <div>
+        <div class="weui-mask" id="iosMask" style="display: none"></div>
+        <div class="weui-actionsheet" id="iosActionsheet">
+            <div class="weui-actionsheet__menu">
+                <div class="weui-actionsheet__cell">示例菜单</div>
+                <div class="weui-actionsheet__cell">示例菜单</div>
+                <div class="weui-actionsheet__cell">示例菜单</div>
+                <div class="weui-actionsheet__cell">示例菜单</div>
+            </div>
+            <div class="weui-actionsheet__action">
+                <div class="weui-actionsheet__cell" id="iosActionsheetCancel" style="color: red">取消</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="weui-skin_android" id="androidActionsheet" style="display: none">
+        <div class="weui-mask"></div>
+        <div class="weui-actionsheet">
+            <div class="weui-actionsheet__menu">
+                <div class="weui-actionsheet__cell">示例菜单</div>
+                <div class="weui-actionsheet__cell">示例菜单</div>
+                <div class="weui-actionsheet__cell">示例菜单</div>
+            </div>
+        </div>
+    </div>
+    <!--END actionSheet-->
+    <div class="page__ft">
+        <a href="javascript:home()"><img src="../images/icon_footer_link.png" /></a>
+    </div>
+</div>
+
+</body>
+</html>

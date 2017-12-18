@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_main"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="pxm.com.pxm.source.activities.CreateInfoActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/pxiaomiBlue"
+            android:text="新建税务信息"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center" />
+    </LinearLayout>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/rectangle_02"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:hint="发票抬头"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:id="@+id/create_info_title" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/rectangle_02"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="税号"
+        android:paddingLeft="15dp"
+        android:phoneNumber="true"
+        android:singleLine="true"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:id="@+id/create_info_tax_num" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/rectangle_02"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="开户银行"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:id="@+id/create_info_bank" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/rectangle_02"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="开户银行账号"
+        android:paddingLeft="15dp"
+        android:phoneNumber="true"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:id="@+id/create_info_bank_num" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/rectangle_02"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="通信地址"
+        android:paddingLeft="15dp"
+        android:textSize="16sp"
+        android:id="@+id/create_info_address" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/rectangle_02"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="联系方式"
+        android:paddingLeft="15dp"
+        android:phoneNumber="true"
+        android:textSize="16sp"
+        android:id="@+id/create_info_mobile" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/register_button_bg"
+        android:id="@+id/save_tax_info"
+        android:text="保  存"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_marginTop="45dp" />
+</LinearLayout>

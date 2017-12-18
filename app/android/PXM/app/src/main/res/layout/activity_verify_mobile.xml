@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".source.activities.VerifyMobileActivity"
+    android:background="#f2f2f2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center|center_horizontal">
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/invoice" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/input_selector"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:hint="@string/phoneNumberInput"
+            android:paddingLeft="10dp"
+            android:phoneNumber="true"
+            android:singleLine="true"
+            android:textColorHint="#808080"
+            android:textColor="#000000"
+            android:id="@+id/register_01_mobile"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:background="@drawable/input_selector"
+                android:layout_weight="1"
+                android:hint="@string/identifyingCode"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="#808080"
+                android:textColor="#000000"
+                android:id="@+id/register_01_code"
+                android:textSize="16sp" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="@string/getIdentifyingCode"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:elevation="3dp"
+                android:id="@+id/get_sms_code"
+                android:textSize="16sp"
+                android:background="@drawable/register_button_bg" />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:text="@string/registerNow"
+            android:textColor="#ffffff"
+            android:id="@+id/btn_regester"
+            android:background="@drawable/register_button_bg"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

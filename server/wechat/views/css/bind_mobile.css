@@ -1,0 +1,20 @@
+.font8{
+	font-size: 8px;
+}
+.weui-cell{
+	height: 44px;
+}
+.weui-label{
+	width: 75px;
+}
+.weui-footer{
+	margin-top: 35%;
+}
+.weui-icon-warn{
+	color: white;
+}
+pre {  
+    tab-size:4;  
+    -moz-tab-size:4;  
+    -o-tab-size:4;  
+} 
